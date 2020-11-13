@@ -1,24 +1,25 @@
-# README
+# FRONTEND INTERVIEW PRACTICE - EKOHE
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple test program to showcase implementation of frontend designs.
 
-Things you may want to cover:
+### Features:
+* User can create account / log in
+* Upon logging in, the dashboard hits a movies endpoint from tvmaze (http://api.tvmaze.com/search/)
+* Mobile responsive pages
 
-* Ruby version
+### To Run Locally, have Rails (6+) installed. After you clone the repo:
 
-* System dependencies
+```
+bundle install
+bundle exec rake db:create db:migrate
+rails s
+```
 
-* Configuration
+### Dependencies
+* Devise Gem (authentication)
+* Bootstrap
+* jQuery
+* Net::HTTP
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Deployed at:
+https://tv-show-test-ekohe.herokuapp.com/
