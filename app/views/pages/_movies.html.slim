@@ -1,0 +1,9 @@
+- if @results.present?
+  - @results.each do |result|
+    .result
+      .result-image = showImage(result)
+      div
+        .result-title = parseAttr(result, 'name')
+        .result-summary = parseAttr(result, 'summary')
+- else
+  p There are no results.

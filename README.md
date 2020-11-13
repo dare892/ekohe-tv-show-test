@@ -20,6 +20,12 @@ rails s
 * Bootstrap
 * jQuery
 * Net::HTTP
+* postgresql
 
 ### Deployed at:
 https://tv-show-test-ekohe.herokuapp.com/
+
+### Additional Good-to-know Gotchas/Features
+* Would have committed more frequently if I were to collaborate, but it was a simple app with just me workng on it so there's not much commit history.
+* Added search functionality to load content dynamically.
+* Spend ~2 hours total.

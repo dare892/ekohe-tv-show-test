@@ -1,8 +1,14 @@
 #dashboard
   .container
-    - @result.each do |result|
-      .result
-        .result-image = image_tag result['show']['image']['original']
-        div
-          .result-title = result['show']['name']
-          .result-summary = result['show']['summary'].try(:html_safe)
+    input#search-movies data-entity="search-movies" type="text" placeholder="Type to Search"
+    #results data-wrapper="results"
+      = render "pages/movies"
+
+javascript:
+  var timer;
+  $(document).on('keyup', '[data-entity=search-movies]', function(){
+    clearTimeout(timer);
+    timer = setTimeout(function(){
+      $.get('/search.js', {search: $('[data-entity=search-movies]').val()})
+    }, 300);
+  })
