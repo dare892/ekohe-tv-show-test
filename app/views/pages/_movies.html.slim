@@ -7,3 +7,5 @@
         .result-summary = parseAttr(result, 'summary')
 - else
   p There are no results.
+  - if @alert.present?
+    = @alert
