@@ -1,0 +1,29 @@
+.devise-wrapper
+  .left-side
+    #logo LOGO
+  .right-side
+    .right-side-body
+      h3 Log in
+      = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+        .field
+          = f.label :email, 'EMAIL ADDRESS'
+          br
+          = f.email_field :email, autofocus: true, autocomplete: "email"
+        .field
+          = f.label :password, 'PASSWORD'
+          br
+          = f.password_field :password, autocomplete: "current-password"
+
+        .sublinks
+          .field.checkbox-wrapper
+            = f.check_box :remember_me
+            = f.label :remember_me
+            = link_to "Forgot your password?", new_password_path(resource_name)
+        .actions
+          = link_to '/' do
+            button.btn.cancel CANCEL
+          = f.submit "LOGIN", class: 'btn login'
+
+        .sign-up-link
+          span Don't have an account yet?
+          = link_to "Sign Up Here", new_user_registration_path

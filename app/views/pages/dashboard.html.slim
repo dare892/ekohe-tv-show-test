@@ -1,0 +1,8 @@
+#dashboard
+  .container
+    - @result.each do |result|
+      .result
+        .result-image = image_tag result['show']['image']['original']
+        div
+          .result-title = result['show']['name']
+          .result-summary = result['show']['summary'].try(:html_safe)

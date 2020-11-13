@@ -1,0 +1,21 @@
+#footer
+  .left-side
+    ul
+      = link_to '/' do
+        li Terms of Services
+      = link_to '/' do
+        li Contact Us
+      - if current_user
+        = link_to destroy_user_session_path, method: :delete do
+          li Sign Out
+  .right-side
+    = link_to '/' do
+      = image_tag 'social_media/facebook.svg'
+    = link_to '/' do
+      = image_tag 'social_media/twitter.svg'
+    = link_to '/' do
+      = image_tag 'social_media/instagram.svg'
+    = link_to '/' do
+      = image_tag 'social_media/soundcloud.svg'
+    = link_to '/' do
+      = image_tag 'social_media/spotify.svg'

@@ -1,0 +1,101 @@
+.devise-wrapper{
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  .left-side{
+    width: 50%;
+    height: 100vh;
+    // background-image: image-url("stars.png");
+    background-size: cover;
+    // background: radial-gradient( rgba(106,90,205, 0.5), rgba(106,90,205, 0.5), #1d1f3a ), image-url('stars.png');
+    background: radial-gradient( rgba(106,90,205, 0.5), rgba(106,90,205, 0.5), #1d1f3a ), image-url('stars.png');
+    #logo{
+      width: 100px;
+      height: 100px;
+      color: white;
+      background-color: #1a1b35;
+      text-align: center;
+      padding-top: 35px;
+      font-size: 20px;
+      text-transform: uppercase;
+      border-radius: 10px;
+      margin: 10px;
+    }
+  }
+  .right-side{
+    width: 50%;
+    h3{
+      text-align: center;
+      font-family: 'medium';
+      margin-bottom: 40px;
+      font-size: 25px;
+    }
+    .right-side-body{
+      width: 550px;
+      max-width: 90%;
+      margin: 150px auto;
+    }
+  }
+
+  form{
+    input[type=email], input[type=password]{
+      border: none;
+      border-bottom: 1px solid lightgray;
+      outline: none;
+      width: 100%;
+      font-size: 16px;
+    }
+    label{
+      font-size: 13px;
+      font-family: medium;
+      margin-bottom: 10px;
+    }
+    .field{
+      margin-bottom: 25px;
+    }
+    .checkbox-wrapper{
+      label{
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-left: 10px;
+      }
+    }
+    .sublinks{
+      a{
+        float: right;
+        text-decoration: underline;
+        color: black;
+        font-family: light;
+      }
+    }
+    .actions{
+      display: flex;
+      justify-content: space-between;
+      .btn{
+        color: white;
+        border-radius: 30px;
+        padding: 7px 40px 6px;
+        font-family: regular;
+      }
+      .cancel{
+        background-color: #1a1b35;
+      }
+      .login{
+        background-image: linear-gradient(to right, #5d47a4 , #456bdb);
+      }
+    }
+    .sign-up-link{
+      font-family: light;
+      float: right;
+      margin-top: 10px;
+      span{
+        margin-right: 20px;
+      }
+      a{
+        color: black;
+        text-decoration: underline;
+      }
+    }
+  }
+}
