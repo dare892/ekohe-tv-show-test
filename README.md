@@ -21,6 +21,7 @@ rails s
 * jQuery
 * Net::HTTP
 * postgresql
+* rspec
 
 ### Deployed at:
 https://tv-show-test-ekohe.herokuapp.com/
