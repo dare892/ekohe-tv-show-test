@@ -1,14 +1,11 @@
 .devise-wrapper{
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
   position: relative;
   display: flex;
   flex-wrap: wrap;
   .left-side{
     width: 50%;
-    height: 100vh;
-    // background-image: image-url("stars.png");
     background-size: cover;
-    // background: radial-gradient( rgba(106,90,205, 0.5), rgba(106,90,205, 0.5), #1d1f3a ), image-url('stars.png');
     background: radial-gradient( rgba(106,90,205, 0.5), rgba(106,90,205, 0.5), #1d1f3a ), image-url('stars.png');
     #logo{
       width: 100px;
@@ -34,7 +31,7 @@
     .right-side-body{
       width: 550px;
       max-width: 90%;
-      margin: 150px auto;
+      margin: calc((100vh - 394px)/2) auto;
     }
   }
 
@@ -96,6 +93,31 @@
         color: black;
         text-decoration: underline;
       }
+    }
+  }
+
+  @media (max-width: 992px) {
+    display: block;
+    min-height: calc(100vh - 70px);
+    .left-side{
+      width: 100%;
+      height: 50px;
+      width: 100%;
+      background: #1a1b35;
+      margin-top: 0;
+      #logo{
+        height: 50px;
+        padding: 10px;
+      }
+    }
+    .right-side{
+      width: 100%;
+    }
+  }
+  @media (max-width: 650px) {
+    min-height: calc(100vh - 130px);
+    .right-side .right-side-body{
+      margin: calc((100vh - 510px)/2) auto;
     }
   }
 }
