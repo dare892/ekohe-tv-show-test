@@ -27,7 +27,7 @@ rails s
 https://tv-show-test-ekohe.herokuapp.com/
 
 ### Additional Good-to-know Gotchas/Features
-* Couln't open the sketch file, (and) couldn't find/inspect the assets properly so everything that is implemented is just eyeballed.
+* Couldn't open the sketch file, (and) couldn't find/inspect the assets properly so everything that is implemented is just eyeballed.
 * Would have committed more frequently if I were to collaborate, but it was a simple app with just me workng on it so there's not much commit history.
 * Added search functionality to load content dynamically.
 * basic testing framework in place.
